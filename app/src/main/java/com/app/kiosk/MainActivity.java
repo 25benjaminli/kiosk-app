@@ -119,8 +119,10 @@ public class MainActivity extends AppCompatActivity {
         Button enter = (Button) findViewById(R.id.enter);
         enter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                System.out.println("submitted information");
+                System.out.println("submitted information: " + inputCode);
                 // put stuff here, ping the server, if it is invalid then clear, prompt the user to re-enter
+
+                // reset
                 inputCode = "";
                 TextView t = (TextView) findViewById(R.id.textBox);
                 t.setText("");
